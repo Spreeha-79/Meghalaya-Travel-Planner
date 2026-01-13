@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(229, 229, 219);
+    margin: 0;
+}
+
+.highlight {
+    background-color: papayawhip;
+    padding: 5px 10px;
+    border-radius: 40px;
+}
+
+.intro {
+    border-radius: 20px;
+    background-color: rgb(42, 202, 231);
+    padding: 3px 7px;
+    margin: 7px;
+}
+
+.intro:hover {
+    background-color: palegreen;
+}
+
+.place {
+    border-radius: 20px;
+    background-color: rgb(48, 192, 175);
+    padding: 7px;
+    margin: 7px;
+}
+
+.place:hover {
+    background-color: palegreen;
+}
+
+table {
+    width: 70%;
+    height: 60%;
+    border-spacing: 5px;
+    color: rgb(0, 0, 82);
+    background-color: rgb(231, 199, 231);
+    margin: 7px;
+    font-size: 18px;
+}
+
+tr:hover {
+    background-color: rgb(140, 227, 140);
+}
+
+.vid {
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    margin: 7px;
+    padding: 4px;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.content:hover {
+    background-color: palegreen;
+}
+
+.my-form {
+    margin: 10px auto;
+    width: 260px;
+    background-color: rgb(0, 9, 88);
+    font-weight: 570;
+    margin-bottom: 8px;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+label::after {
+    content: " *";
+    color: red;
+}
+
+.my-form:hover {
+    background-color: rgb(2, 0, 70);
+}
+
+.btn {
+    background-color: rgb(14, 151, 1);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 530;
+}
+
+.btn:before {
+    content: "✔ ";
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.my-form input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(61, 255, 47);
+}
