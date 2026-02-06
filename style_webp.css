@@ -1,66 +1,169 @@
+.container {
+    max-width: 1200px;
+    width: 92%;
+    margin: auto;
+    padding: 20px;
+}
+
 body {
-    background-color: rgb(229, 229, 219);
     margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f3fff6, #eaf6ff);
+}
+
+.main_img {
+    width: 100%;
+    height: 460px;
+    border-radius: 22px;
+    margin-bottom: 25px;
+    box-shadow: 0px 10px 25px rgba(0, 0.1, 0.1, 0.18);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: darkgreen;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: brown;
+    font-size: 18px;
+    margin-top: 0;
 }
 
 .highlight {
-    background-color: papayawhip;
     padding: 5px 10px;
     border-radius: 40px;
 }
 
 .intro {
+    background: rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(16px);
     border-radius: 20px;
-    background-color: rgb(42, 202, 231);
     padding: 3px 7px;
     margin: 7px;
 }
 
+.intro p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
 .intro:hover {
-    background-color: palegreen;
+    background-color: rgb(185, 245, 185);
+}
+
+.places_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.place_card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+.place-card h3 {
+    margin: 12px 12px 6px;
+    color: darkgreen;
+}
+
+.place-card p {
+    margin: 0 12px 12px;
+    line-height: 1.6;
+}
+
+.place-card:hover {
+    transform: translateY(-6px);
 }
 
 .place {
     border-radius: 20px;
-    background-color: rgb(48, 192, 175);
     padding: 7px;
     margin: 7px;
 }
 
 .place:hover {
-    background-color: palegreen;
+    background-color: rgb(185, 245, 185);
 }
 
 table {
-    width: 70%;
-    height: 60%;
-    border-spacing: 5px;
-    color: rgb(0, 0, 82);
-    background-color: rgb(231, 199, 231);
-    margin: 7px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
     font-size: 18px;
 }
 
+th,
+td {
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background: rgb(1, 143, 1);
+    color: white;
+}
+
 tr:hover {
-    background-color: rgb(140, 227, 140);
+    background-color: #d6f0d6;
 }
 
 .vid {
-    margin: 5px;
-    border-radius: 4px;
+    width: 50%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin: 7px;
     padding: 4px;
-    background-color: aquamarine;
     border-radius: 5px;
+    gap: 20px;
+}
+
+.content p {
+    width: 50%;
+    font-size: 16.5px;
+    line-height: 1.6;
 }
 
 .content:hover {
-    background-color: palegreen;
+    background-color: rgb(185, 245, 185);
+}
+
+.intro,
+.place,
+.content {
+    background: white;
+    padding: 18px;
+    margin: 18px 0;
+    border-radius: 18px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+.intro:hover,
+.place:hover,
+.content:hover {
+    transform: translateY(-4px);
 }
 
 .my-form {
