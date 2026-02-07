@@ -8,13 +8,25 @@
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo">Meghalaya 🌿</div>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#places">Places</a>
+        <a href="#besttime">Best Time</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
   <div class="container">
     <img class="main_img" src="meghalaya_falls.jpg" width="1266" height="477" alt="Meghalaya waterfalls">
 
     <h1> <span class="highlight">My dream travel destination: Meghalaya </span></h1>
     <h4>A land of waterfalls, living root bridges, and endless greenery.</h4>
 
-    <div class="intro">
+    <div class="intro" id="about">
       <h2 align="center">About Meghalaya</h2>
       <p>
         <span style="color:darkgreen;">Meghalaya</span> is one of those places that feels like nature’s secret — <span
@@ -29,39 +41,44 @@
       </p>
     </div>
 
-    <div class="place">
+    <div class="place" id="places">
       <h2 align="center"><span style="padding: 20px">Top places to visit in Meghalaya </span></h2>
       <div class="places_grid">
         <div class="place_card">
-          <h3>Shillong: the Scotland of the East</h3><br>
-          <img src="shillong_img" alt="Shillong">
-          Shillong is the heart of Meghalaya — lively yet calm, full of cafés, pine trees, small lakes, and incredible
-          viewpoints. The weather stays cool almost all year, and the city has a cozy mountain-town vibe that makes you
-          instantly relax.
-
-          <br>
-          <b>Highlights:</b> Ward’s Lake, Shillong Peak, Laitlum Canyon, Elephant Falls.
+          <h3>Shillong: the Scotland of the East</h3>
+          <img src="shillong_img.jpg" alt="Shillong">
+          <p>
+            Shillong is the heart of Meghalaya — lively yet calm, full of cafés, pine trees, small lakes, and incredible
+            viewpoints. The weather stays cool almost all year, and the city has a cozy mountain-town vibe that makes
+            you
+            instantly relax.
+            <b>Highlights:</b> Ward’s Lake, Shillong Peak, Laitlum Canyon, Elephant Falls.
+          </p>
         </div>
 
-        <br>
         <div class="place_card">
-          <h3>Cherrapunji – Land of Waterfalls & Misty Hills</h3><br>
-          Cherrapunji (Sohra) is famous for its dramatic cliffs, thick clouds, and waterfalls that fall from insane
-          heights. The views honestly feel unreal — like you’re walking inside a giant cloud.<br>
-          <b>Highlights:</b> Nohkalikai Falls, Seven Sisters Falls, Arwah Caves.
-          <br>
+          <h3>Cherrapunji – Land of Waterfalls & Misty Hills</h3>
+          <img src="cherrapunji_img.jpg" alt="Cherrapunji">
+          <p>
+            Cherrapunji (Sohra) is famous for its dramatic cliffs, thick clouds, and waterfalls that fall from insane
+            heights. The views honestly feel unreal — like you’re walking inside a giant cloud.
+            <b>Highlights:</b> Nohkalikai Falls, Seven Sisters Falls, Arwah Caves.
+          </p>
         </div>
         <div class="place_card">
-          <h3>Mawlynnong – Asia’s Cleanest Village</h3><br>
-          This village is unbelievably clean, green, and naturally beautiful. Every corner has flowers, bamboo houses,
-          and
-          well-maintained paths. Being here feels like stepping into a nature-themed fairy tale.<br>
-          <b>Highlights:</b> Sky View Tower, Living Root Bridge nearby, village walk.
+          <h3>Mawlynnong – Asia’s Cleanest Village</h3>
+          <img src="mawlynnong_img.jpg" alt="Mawlynnong">
+          <p>
+            This village is unbelievably clean, green, and naturally beautiful. Every corner has flowers, bamboo houses,
+            and
+            well-maintained paths. Being here feels like stepping into a nature-themed fairy tale.
+            <b>Highlights:</b> Sky View Tower, Living Root Bridge nearby, village walk.
+          </p>
         </div>
       </div>
     </div>
 
-    <h2 align="center">Best months to visit Meghalaya</h2>
+    <h2 align="center" id="besttime">Best months to visit Meghalaya</h2>
     <table border=1>
       <tr style="width: 90px;height:60px; font-size: large;">
         <th>Month</th>
@@ -88,9 +105,7 @@
     <h2 align="center">Experience Meghalaya</h2>
 
     <div class="content">
-      <video class="vid" align="center" controls width="722">
-        <source src="meghalaya_vid.mp4" type="video/mp4">
-      </video>
+
 
       <p>
         Meghalaya is a land where water doesn’t just flow — it performs. Thanks to heavy rainfall, misty hills, and deep
@@ -107,7 +122,7 @@
     </div>
 
     <h2 align="center">Inquiry form: Fill this form for more details</h2>
-    <form class="my-form" align="center">
+    <form class="my-form" align="center" id="contact">
       <div>
         <label for="name"> Name:</label><br>
         <input type="text" id="name" name="name">
