@@ -2,6 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f3fff6, #eaf6ff);
+}
+
 .navbar {
     position: sticky;
     top: 0;
@@ -14,7 +20,7 @@ html {
 .logo {
     font-weight: 800;
     font-size: 20px;
-    color: darkgreen;
+    color: rgb(1, 124, 1);
 }
 
 .nav-links {
@@ -49,29 +55,146 @@ html {
     max-width: 1100px;
     width: 92%;
     margin: auto;
+    padding: 60px 20px;
+}
+
+.intro,
+.place,
+.content,
+.trip-form,
+table {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 83vh;
+    /* full screen style */
+    background-image: url("images/meghalaya_falls.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.639);
+    /* dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+    color: white;
     padding: 20px;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #f3fff6, #eaf6ff);
+.hero-content {
+    animation: fadeUp 1.5s ease;
 }
 
-.main_img {
-    width: 100%;
-    height: 460px;
-    border-radius: 22px;
-    margin-bottom: 25px;
-    box-shadow: 0px 10px 25px rgba(0, 0.1, 0.1, 0.18);
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: Felipa;
+    margin-bottom: 24px;
+    backdrop-filter: blur(3px);
+}
+
+.hero-title {
+    font-size: 80px;
+    margin: 0;
+    letter-spacing: 1px;
+    opacity: 0.99;
+}
+
+.hero-subtitle {
+    font-family: Luxurious Roman;
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: 0.99;
+}
+
+.hero-buttons {
+    margin-top: 14px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.btn-primary {
+    background: rgba(198, 233, 201, 0.18);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.btn-primary:hover {
+    background: rgb(15, 75, 0);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: rgba(183, 241, 188, 0.18);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+    background: rgb(15, 75, 0);
+    transform: translateY(-2px);
 }
 
 h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Quintessential !important;
     text-align: center;
-    color: darkgreen;
+    color: rgb(3, 154, 3);
     font-size: 40px;
     margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 70px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #033a03;
 }
 
 h4 {
@@ -103,56 +226,119 @@ h4 {
 
 .intro:hover {
     background-color: rgb(185, 245, 185);
+    box-shadow: 0px 28px 70px rgba(0, 0, 0, 0.14);
 }
 
-.places_grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    margin-top: 15px;
+.places_list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-top: 20px;
 }
 
-.place_card {
-    background: white;
-    border-radius: 18px;
+.place-tag {
+    display: inline-block;
+    width: fit-content;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+
+    background: rgba(15, 120, 15, 0.12);
+    color: rgb(4, 90, 4);
+}
+
+.place_row,
+.place_row_reverse {
+    display: flex;
+    gap: 26px;
+    align-items: stretch;
+    background: rgba(255, 255, 255, 0.769);
+    backdrop-filter: blur(10px);
+    border-radius: 26px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
     overflow: hidden;
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.14);
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.place_row:hover,
+.place_row_reverse:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0px 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.place_row_reverse {
+    flex-direction: row-reverse;
+}
+
+.place_img {
+    width: 50%;
+    min-height: 320px;
+}
+
+.place_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.place-text {
+    width: 55%;
+    padding: 34px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.place-text h3 {
+    margin: 0;
+    font-size: 28px;
+    color: darkgreen;
+    line-height: 1.2;
+}
+
+.place-text p {
+    margin-top: 14px;
+    font-size: 16.5px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.909);
+}
+
+.experience {
+    margin-top: 25px;
+    gap: 22px;
+}
+
+.exp-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 18px;
+    margin-top: 18px;
+    padding: 22px;
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     transition: 0.3s ease;
 }
 
-.place_card img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    display: block;
+.exp-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.16);
 }
 
-.place_card h3 {
-    margin: 16px 16px 10px;
-    font-size: 18px;
-    padding: 0 14px;
+.exp-card h3 {
+    margin-top: 0;
+    font-size: 22px;
     color: darkgreen;
 }
 
-.place_card p {
-    margin: 0;
-    padding: 14px 16px 18px;
+.exp-card p {
     line-height: 1.7;
     font-size: 15.5px;
-}
-
-.place_card:hover {
-    transform: translateY(-6px);
-}
-
-.place {
-    border-radius: 20px;
-    padding: 7px;
-    margin: 7px;
-}
-
-.place:hover {
-    background-color: rgb(185, 245, 185);
+    color: rgba(0, 0, 0, 0.966);
 }
 
 table {
@@ -181,35 +367,8 @@ tr:hover {
     background-color: #d6f0d6;
 }
 
-.vid {
-    width: 50%;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 12px;
-}
 
-.content {
-    display: flex;
-    align-items: center;
-    margin: 7px;
-    padding: 4px;
-    border-radius: 5px;
-    gap: 20px;
-}
-
-.content p {
-    width: 50%;
-    font-size: 16.5px;
-    line-height: 1.6;
-}
-
-.content:hover {
-    background-color: rgb(185, 245, 185);
-}
-
-.intro,
-.place,
-.content {
+.intro {
     background: white;
     padding: 18px;
     margin: 18px 0;
@@ -218,21 +377,46 @@ tr:hover {
     transition: 0.3s ease;
 }
 
-.intro:hover,
-.place:hover,
-.content:hover {
+.intro:hover {
     transform: translateY(-4px);
 }
 
-.my-form {
-    margin: 10px auto;
-    width: 260px;
-    background-color: rgb(0, 9, 88);
-    font-weight: 570;
-    margin-bottom: 8px;
-    color: whitesmoke;
+.trip-form {
+    max-width: 420px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trip-form label {
+    font-weight: 600;
+}
+
+.trip-form input,
+.trip-form select,
+.trip-form textarea {
     padding: 10px;
     border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.trip-form input:focus,
+.trip-form select:focus,
+.trip-form textarea:focus {
+    outline: none;
+    border-color: rgb(0, 149, 0);
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 label::after {
@@ -262,7 +446,14 @@ label::after {
 }
 
 .btn:hover {
-    background-color: black;
+    background-color: rgb(0, 62, 0);
+}
+
+.error-msg {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 6px 0;
+    color: red;
 }
 
 .my-form input {
@@ -275,4 +466,25 @@ label::after {
 input:focus {
     outline: none;
     border-color: rgb(61, 255, 47);
+}
+
+.result-box {
+    display: none;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 18px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.result-box h3 {
+    margin-top: 0;
+    color: darkgreen;
+}
+
+.result-box ul {
+    padding-left: 20px;
 }

@@ -3,8 +3,13 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="style_webp.css">
   <title>Meghalaya: My dream travel destination</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Felipa&family=Gravitas+One&family=Luxurious+Roman&family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style_webp.css">
 </head>
 
 <body>
@@ -16,15 +21,29 @@
         <a href="#about">About</a>
         <a href="#places">Places</a>
         <a href="#besttime">Best Time</a>
-        <a href="#contact">Contact</a>
+        <a href="#culture">Experience</a>
       </div>
     </div>
   </nav>
-  <div class="container">
-    <img class="main_img" src="meghalaya_falls.jpg" width="1266" height="477" alt="Meghalaya waterfalls">
+  <header class="hero">
+    <div class="hero-overlay"></div>
 
-    <h1> <span class="highlight">My dream travel destination: Meghalaya </span></h1>
-    <h4>A land of waterfalls, living root bridges, and endless greenery.</h4>
+    <div class="hero-content">
+      <p class="hero-tag">🌿 The Abode of Clouds</p>
+      <h1 class="hero-title">Discover Meghalaya</h1>
+      <p class="hero-subtitle">
+        Waterfalls, living root bridges, misty hills, and nature that feels unreal.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#places" class="btn-primary">Explore Places</a>
+        <a href="#tripForm" class="btn-secondary">Plan Your Trip</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
 
     <div class="intro" id="about">
       <h2 align="center">About Meghalaya</h2>
@@ -43,39 +62,120 @@
 
     <div class="place" id="places">
       <h2 align="center"><span style="padding: 20px">Top places to visit in Meghalaya </span></h2>
-      <div class="places_grid">
-        <div class="place_card">
-          <h3>Shillong: the Scotland of the East</h3>
-          <img src="shillong_img.jpg" alt="Shillong">
-          <p>
-            Shillong is the heart of Meghalaya — lively yet calm, full of cafés, pine trees, small lakes, and incredible
-            viewpoints. The weather stays cool almost all year, and the city has a cozy mountain-town vibe that makes
-            you
-            instantly relax.
-            <b>Highlights:</b> Ward’s Lake, Shillong Peak, Laitlum Canyon, Elephant Falls.
-          </p>
+      <div class="places_list">
+        <div class="place_row">
+          <div class="place_img">
+            <img src="images/shillong_img.jpg" alt="Shillong">
+          </div>
+          <div class="place-text"><span class="place-tag">Top Spot</span>
+            <h3>Shillong: Scotland of the East</h3>
+
+            <p>
+              Shillong is the heart of Meghalaya — lively yet calm, full of cafés, pine trees, small lakes, and
+              incredible
+              viewpoints. The weather stays cool almost all year, and the city has a cozy mountain-town vibe that makes
+              you
+              instantly relax.<br>
+              <b>Highlights:</b> Ward’s Lake, Shillong Peak, Laitlum Canyon, Elephant Falls.
+            </p>
+          </div>
         </div>
 
-        <div class="place_card">
-          <h3>Cherrapunji – Land of Waterfalls & Misty Hills</h3>
-          <img src="cherrapunji_img.jpg" alt="Cherrapunji">
-          <p>
-            Cherrapunji (Sohra) is famous for its dramatic cliffs, thick clouds, and waterfalls that fall from insane
-            heights. The views honestly feel unreal — like you’re walking inside a giant cloud.
-            <b>Highlights:</b> Nohkalikai Falls, Seven Sisters Falls, Arwah Caves.
-          </p>
+        <div class="place_row_reverse">
+          <div class="place_img">
+            <img src="images/cherrapunji_img.jpg" alt="Cherrapunji">
+          </div>
+          <div class="place-text">
+            <h3>Cherrapunji – Land of Waterfalls & Misty Hills</h3>
+
+            <p>
+              Cherrapunji (Sohra) is famous for its dramatic cliffs, thick clouds, and waterfalls that fall from insane
+              heights. The views honestly feel unreal — like you’re walking inside a giant cloud.<br>
+              <b>Highlights:</b> Nohkalikai Falls, Seven Sisters Falls, Arwah Caves.
+            </p>
+          </div>
         </div>
-        <div class="place_card">
-          <h3>Mawlynnong – Asia’s Cleanest Village</h3>
-          <img src="mawlynnong_img.jpg" alt="Mawlynnong">
-          <p>
-            This village is unbelievably clean, green, and naturally beautiful. Every corner has flowers, bamboo houses,
-            and
-            well-maintained paths. Being here feels like stepping into a nature-themed fairy tale.
-            <b>Highlights:</b> Sky View Tower, Living Root Bridge nearby, village walk.
-          </p>
+        <div class="place_row">
+          <div class="place_img">
+            <img src="images/mawlynnong_img.jpg" alt="Mawlynnong">
+          </div>
+          <div class="place-text">
+            <h3>Mawlynnong – Asia’s Cleanest Village</h3>
+            <p>
+              This village is unbelievably clean, green, and naturally beautiful. Every corner has flowers, bamboo
+              houses,
+              and
+              well-maintained paths. Being here feels like stepping into a nature-themed fairy tale.<br>
+              <b>Highlights:</b> Sky View Tower, Living Root Bridge nearby, village walk.
+            </p>
+          </div>
+        </div>
+        <div class="place_row_reverse">
+          <div class="place_img">
+            <img src="images/dawki_img.jpg" alt="Dawki">
+          </div>
+          <div class="place-text">
+            <h3>Dawki - Where crystal waters make boats float on air.</h3>
+            <p>
+              Dawki is a small border town in the West Jaintia Hills of Meghalaya, most famous for the Umngot River,
+              often called the cleanest river in Asia. The water is so transparent that during the winter months, boats
+              appear to be floating on air.<br>
+              <b>Highlights: </b>Umngot River, India-Bangladesh Border, Dawki Bridge.
+            </p>
+          </div>
+        </div>
+        <div class="place_row">
+          <div class="place_img">
+            <img src="images/umiam_img.jpg" alt="Umiam">
+          </div>
+          <div class="place-text">
+            <h3>Umiam Lake - Calm waters, peaceful mountain views.</h3>
+            <p>
+              Umiam Lake, commonly known as Barapani (Big Water), is a massive, scenic man-made reservoir located about
+              15
+              km north of Shillong, Meghalaya<br>
+              <b>Highlights: </b>Water Sports, Lumpongden Island.
+            </p>
+          </div>
         </div>
       </div>
+    </div>
+
+    <h2 align="center" id="culture">Meghalaya Culture & Experiences</h2>
+
+    <div class="experience">
+
+      <div class="exp-card">
+        <h3>🌿 Local Culture</h3>
+        <p>
+          Meghalaya is home to the Khasi, Jaintia, and Garo tribes. Their traditions,
+          music, and lifestyle are deeply connected to nature.
+          Meghalaya has a strong music scene, especially in Shillong.
+          It’s often called the “Rock Capital of India” because live bands and music festivals are super common.
+          Meghalaya’s culture is deeply connected to nature, seen in eco-friendly villages, bamboo architecture, and
+          local values of cleanliness, respect, and harmony.
+        </p>
+      </div>
+
+      <div class="exp-card">
+        <h3>🍲 Traditional Food</h3>
+        <p>
+          Meghalaya cuisine is simple, earthy, and full of unique tribal flavors. Popular dishes include Jadoh (rice
+          cooked with meat), Dohneiiong (pork in black sesame gravy), and Tungrymbai (fermented soybeans). Bamboo shoot
+          dishes, smoked meat, and herbal soups are common across Khasi, Jaintia, and Garo communities.
+        </p>
+      </div>
+
+      <div class="exp-card">
+        <h3>🎉 Famous Festivals</h3>
+        <p>
+          Meghalaya’s festivals are vibrant celebrations of nature, harvest, and community spirit. The Wangala Festival
+          of the Garo tribe, also known as the “100 Drums Festival,” is famous for powerful drum beats and dance
+          performances. Khasi festivals like Shad Suk Mynsiem and the Nongkrem Dance Festival showcase graceful
+          traditional dances, music, and cultural rituals.
+        </p>
+      </div>
+
     </div>
 
     <h2 align="center" id="besttime">Best months to visit Meghalaya</h2>
@@ -102,53 +202,117 @@
       </tr>
     </table>
 
-    <h2 align="center">Experience Meghalaya</h2>
-
-    <div class="content">
 
 
-      <p>
-        Meghalaya is a land where water doesn’t just flow — it performs. Thanks to heavy rainfall, misty hills, and deep
-        green valleys,
-        the state is packed with waterfalls that feel straight out of a fantasy novel. Every fall has its own mood: some
-        roar like thunder,
-        some quietly slide down rocks, and some suddenly appear after the monsoons like nature’s surprise gift.<br><br>
-        Nohkalikai Falls is the show-stopper. Dropping from a dramatic cliff near Cherrapunji, it’s one of the tallest
-        plunge waterfalls in India.
-        Watching the water free-fall into a turquoise pool below is genuinely breathtaking — raw, powerful,
-        unforgettable.
-      </p>
-
-    </div>
-
-    <h2 align="center">Inquiry form: Fill this form for more details</h2>
-    <form class="my-form" align="center" id="contact">
+    <h2 align="center">Plan your Meghalaya trip</h2>
+    <form class="trip-form" id="tripForm">
       <div>
-        <label for="name"> Name:</label><br>
-        <input type="text" id="name" name="name">
+        <label> Name</label>
+        <input type="text" id="name" placeholder="Name">
       </div>
 
       <div>
-        <label for="email"> Email:</label><br>
-        <input type="email" id="email" name="email">
+        <label> Email:</label>
+        <input type="email" id="email" placeholder="example@email.com">
       </div>
-
+      <label>Phone</label>
+      <input type="tel" id="phone" placeholder="10-digit phone number">
       <div>
-        <label> Preffered month to visit: </label><br>
-        <select>
-          <option>Oct-Apr</option>
-          <option>May-Jun</option>
-          <option>Jul-Sep</option>
+        <label> Number of days </label><br>
+        <select id="days">
+          <option value="">Select days</option>
+          <option>2-3 days</option>
+          <option>3-5 days</option>
+          <option>7-10 days</option>
         </select>
       </div>
+      <label>Budget range</label>
+      <select id="budget">
+        <option value="">Select budget</option>
+        <option>₹10k – ₹20k</option>
+        <option>₹20k – ₹40k</option>
+        <option>₹40k+</option>
+      </select>
+      <label>Preferred month</label>
+      <select id="month">
+        <option value="">Select month</option>
+        <option>Oct – Dec</option>
+        <option>Jan – Mar</option>
+        <option>Apr – Jun</option>
+      </select>
+      <label>Travel type</label>
+      <div class="radio-group">
+        <label><input type="radio" name="type" value="Solo"> Solo</label>
+        <label><input type="radio" name="type" value="Friends"> Friends</label>
+        <label><input type="radio" name="type" value="Family"> Family</label>
+        <label><input type="radio" name="type" value="Couple"> Couple</label>
+      </div>
+      <label>Extra message</label>
+      <textarea id="message" rows="4" placeholder="Any special requests?"></textarea>
+
       <br>
-      <button class="btn">
-        Submit
-      </button>
+      <p id="error" class="error-msg"></p>
+      <button type="submit" class="btn">Submit Request</button>
 
     </form>
+    <div id="resultBox" class="result-box"></div>
   </div>
+  <script>
+    document.getElementById("tripForm").addEventListener("submit", function (e) {
+      e.preventDefault();
 
+      let name = document.getElementById("name").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let phone = document.getElementById("phone").value.trim();
+      let days = document.getElementById("days").value;
+      let budget = document.getElementById("budget").value;
+      let month = document.getElementById("month").value;
+      let message = document.getElementById("message").value.trim();
+
+      let travelType = document.querySelector('input[name="type"]:checked');
+
+      let error = document.getElementById("error");
+      let resultBox = document.getElementById("resultBox");
+
+      if (!name || !email || !phone || !days || !budget || !month) {
+        error.textContent = "Please fill all required fields.";
+        return;
+      }
+
+      if (phone.length !== 10 || isNaN(phone)) {
+        error.textContent = "Enter a valid 10-digit phone number.";
+        return;
+      }
+
+      if (!travelType) {
+        error.textContent = "Please select a travel type.";
+        return;
+      }
+
+      error.style.color = "green";
+      error.textContent = "Form submitted successfully! 🌿";
+      resultBox.style.display = "block";
+      resultBox.innerHTML = `
+    <h3>Trip Request Received 🌿</h3>
+    <p>Thanks <b>${name}</b>! Here’s your travel request summary:</p>
+
+    <ul>
+      <li><b>Email:</b> ${email}</li>
+      <li><b>Phone:</b> ${phone}</li>
+      <li><b>Days:</b> ${days}</li>
+      <li><b>Budget:</b> ${budget}</li>
+      <li><b>Preferred Month:</b> ${month}</li>
+      <li><b>Travel Type:</b> ${travelType.value}</li>
+    </ul>
+    <p><b>Extra message:</b> ${message ? message : "None"}</p>
+  `;
+
+      // scroll to result
+      resultBox.scrollIntoView({ behavior: "smooth" });
+
+      this.reset();
+    });
+  </script>
 </body>
 
 </html>
