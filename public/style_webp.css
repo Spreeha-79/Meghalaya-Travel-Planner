@@ -352,8 +352,12 @@ table {
     font-size: 18px;
 }
 
-th,
-td {
+.months {
+    padding: 15px;
+}
+
+.months th,
+.months td {
     padding: 14px;
     text-align: center;
 }
@@ -361,6 +365,12 @@ td {
 th {
     background: rgb(1, 143, 1);
     color: white;
+}
+
+tr {
+    width: 90px;
+    height: 60px;
+
 }
 
 tr:hover {
