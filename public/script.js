@@ -138,9 +138,7 @@ document.getElementById("tripForm").addEventListener("submit", function (e) {
     resultBox.style.display = "block";
 
     // API Keys
-    const ROUTE_API = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImE1M2ZhYzc2ODFkYzQ2YmFhODI5MGViNzVkODY3MTYyIiwiaCI6Im11cm11cjY0In0=";
-    const PLACE_API = "cadd265f2ff04144be30da817c86d845";
-    const WEATHER_API = "92b4c25cd5b8727d2bede553cd415121";
+
 
     // Define better fallback places with proper coordinates
     const FALLBACK_PLACES = [
@@ -494,7 +492,39 @@ document.getElementById("tripForm").addEventListener("submit", function (e) {
             </a>
           </div>
         `).join('')}
+        
       </div>
+
+      <div style="margin-top: 20px; border-top: 1px solid #c8e6c9; padding-top: 16px;">
+        <p style="font-weight: 700; color: #2e7d32; margin: 0 0 12px 0;">🔍 Search more hotels on other platforms</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <a href="https://www.makemytrip.com/hotels/hotel-listing/?checkin=&checkout=&city=CTSHL&country=IN&searchText=Shillong&roomStayQualifier=2e0e&locusId=CTSHL&locusType=city"
+            target="_blank"
+            style="display: flex; align-items: center; gap: 8px; padding: 10px 18px;
+                   background: #e3f2fd; border: 2px solid #1565c0; border-radius: 10px;
+                   text-decoration: none; color: #1565c0; font-weight: 700; font-size: 14px;
+                   transition: 0.2s;">
+            ✈️ MakeMyTrip
+          </a>
+          <a href="https://www.booking.com/searchresults.html?ss=Shillong%2C+Meghalaya%2C+India&lang=en-gb&dest_type=city"
+            target="_blank"
+            style="display: flex; align-items: center; gap: 8px; padding: 10px 18px;
+                   background: #e8f5e9; border: 2px solid #1b5e20; border-radius: 10px;
+                   text-decoration: none; color: #1b5e20; font-weight: 700; font-size: 14px;
+                   transition: 0.2s;">
+            🏨 Booking.com
+          </a>
+          <a href="https://www.goibibo.com/hotels/hotels-in-shillong/"
+            target="_blank"
+            style="display: flex; align-items: center; gap: 8px; padding: 10px 18px;
+                   background: #fce4ec; border: 2px solid #880e4f; border-radius: 10px;
+                   text-decoration: none; color: #880e4f; font-weight: 700; font-size: 14px;
+                   transition: 0.2s;">
+            🛎️ Goibibo
+          </a>
+        </div>
+      </div>
+
     </div>`;
     }
     // Main travel assistant function
@@ -604,7 +634,7 @@ document.getElementById("tripForm").addEventListener("submit", function (e) {
     </ul>
     <p><b>Extra message:</b> ${message ? message : "None"}</p>
     <hr>
-    <p>🌿 Your personalized itinerary is ready above! Scroll up to see it.</p>
+    <p>🌿 Your personalized itinerary is ready! Scroll down to see it.</p>
   `;
 
     resultBox.scrollIntoView({ behavior: "smooth" });
