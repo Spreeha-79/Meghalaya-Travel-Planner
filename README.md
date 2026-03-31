@@ -5,7 +5,7 @@ A full-stack travel planning website for **Meghalaya — The Abode of Clouds**, 
 ---
 ## 📁 Project Structure
  
-
+```
 trip-planner/
 ├── public/
 │   ├── script.js           # Javascript 
@@ -17,7 +17,7 @@ trip-planner/
 ├── .env                    # API keys (not committed)
 ├── package.json
 └── package-lock.json
- 
+ ```
 ---
 
 ## ✨ Features
