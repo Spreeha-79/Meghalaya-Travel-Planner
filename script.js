@@ -90,6 +90,7 @@ function initCarousel(carouselId) {
 initCarousel("carousel-culture");
 initCarousel("carousel-food");
 initCarousel("carousel-festival");
+
 document.getElementById("tripForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -136,8 +137,6 @@ document.getElementById("tripForm").addEventListener("submit", function (e) {
     error.style.color = "green";
     error.textContent = "Form submitted successfully! 🌿";
     resultBox.style.display = "block";
-
-    // API Keys
 
 
     // Define better fallback places with proper coordinates
@@ -195,9 +194,6 @@ document.getElementById("tripForm").addEventListener("submit", function (e) {
         ]
     };
 
-    // Enhanced hotels by budget
-
-
     // Enhanced food recommendations
     const FOODS = {
         must_try: [
@@ -214,7 +210,7 @@ document.getElementById("tripForm").addEventListener("submit", function (e) {
         ]
     };
 
-    // Fetch weather data with better error handling
+    // Fetch weather data with error handling
     async function fetchWeather() {
         try {
             const response = await fetch("/api/weather");
@@ -241,7 +237,6 @@ document.getElementById("tripForm").addEventListener("submit", function (e) {
         try {
             const controller = new AbortController();
             const timeoutId = setTimeout(() => controller.abort(), 8000);
-
             const response = await fetch("/api/places");
             clearTimeout(timeoutId);
 
@@ -266,7 +261,7 @@ document.getElementById("tripForm").addEventListener("submit", function (e) {
         }
     }
 
-    // Calculate distance using Google Maps Distance Matrix (free alternative)
+    // Calculate distance using Google Maps Distance Matrix
     function calculateDistance(lat1, lon1, lat2, lon2) {
         const R = 6371; // Earth's radius in km
         const dLat = (lat2 - lat1) * Math.PI / 180;
